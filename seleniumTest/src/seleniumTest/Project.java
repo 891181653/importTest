@@ -35,7 +35,7 @@ public class Project {
 		imooc imweb=new imooc();
 		imweb.login(driver);
 		imweb.register(driver);
-
-	}
+		imweb.register(driver);
+	} 
 
 }
