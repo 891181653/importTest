@@ -32,7 +32,7 @@ public class Project {
 		WebDriver driver = new ChromeDriver();
 	/*	job job1=new job();
 		job1.login(driver);*/
-		imooc imweb=new imooc();
+		Baidu imweb=new Baidu();
 		imweb.login(driver);
 		imweb.register(driver);
 		
