@@ -1,5 +1,6 @@
 package seleniumTest;
 
+import java.io.IOException;
 import java.sql.Time;
 
 import javax.print.DocFlavor.STRING;
@@ -17,7 +18,7 @@ import org.openqa.selenium.interactions.Actions;
 
 public class Project {
 
-	public static void main(String[] args) throws InterruptedException {
+	public static void main(String[] args) throws InterruptedException, IOException {
 		/*
 		 * String firefoxdriver = "c:\\webdriver\\geckodriver.exe";
 		 * System.setProperty("webdriver.gecko.driver",firefoxdriver); WebDriver driver
@@ -32,9 +33,14 @@ public class Project {
 		WebDriver driver = new ChromeDriver();
 	/*	job job1=new job();
 		job1.login(driver);*/
-		Baidu imweb=new Baidu();
+	/*	Baidu imweb=new Baidu();
 		imweb.login(driver);
-		imweb.register(driver);
+		imweb.register(driver);*/
+		Imooc imooc=new Imooc();
+		imooc.initDriver(driver);
+		imooc.login();
+		imooc.editImformation();
+		imooc.uploadPicture();
 		
 	} 
 
