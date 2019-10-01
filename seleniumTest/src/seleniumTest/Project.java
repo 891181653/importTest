@@ -39,8 +39,10 @@ public class Project {
 		Imooc imooc=new Imooc();
 		imooc.initDriver(driver);
 		imooc.login();
-		imooc.editImformation();
-		imooc.uploadPicture();
+//		imooc.editImformation();
+//		imooc.uploadPicture();
+		for(int i=1;i<10;i++) {
+		imooc.editPosition();}
 		
 	} 
 
